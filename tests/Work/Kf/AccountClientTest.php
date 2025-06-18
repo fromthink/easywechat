@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Kf;
+namespace Fromthink\EasyWeChat\Tests\Work\Kf;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Kf\AccountClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\Kf\AccountClient;
 
 /**
  * Class ClientTest.
  *
- * @package EasyWeChat\Tests\Work\Live
+ * @package Fromthink\EasyWeChat\Tests\Work\Live
  *
  * @author 读心印 <aa24615@qq.com>
  */

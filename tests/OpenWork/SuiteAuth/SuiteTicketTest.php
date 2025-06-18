@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenWork\SuiteAuth;
+namespace Fromthink\EasyWeChat\Tests\OpenWork\SuiteAuth;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\OpenWork\Application;
-use EasyWeChat\OpenWork\SuiteAuth\SuiteTicket;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\OpenWork\Application;
+use Fromthink\EasyWeChat\OpenWork\SuiteAuth\SuiteTicket;
+use Fromthink\EasyWeChat\Tests\TestCase;
 use Psr\SimpleCache\CacheInterface;
 
 class SuiteTicketTest extends TestCase

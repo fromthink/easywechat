@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Security;
+namespace Fromthink\EasyWeChat\Payment\Security;
 
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Payment\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -23,8 +23,8 @@ class Client extends BaseClient
     /**
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getPublicKey()

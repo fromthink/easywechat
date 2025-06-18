@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests;
+namespace Fromthink\EasyWeChat\Tests;
 
-use EasyWeChat\Factory;
+use Fromthink\EasyWeChat\Factory;
 
 class FactoryTest extends TestCase
 {
@@ -25,8 +25,8 @@ class FactoryTest extends TestCase
             'app_id' => 'corpid@123',
         ]);
 
-        $this->assertInstanceOf(\EasyWeChat\OfficialAccount\Application::class, $officialAccount);
-        $this->assertInstanceOf(\EasyWeChat\OfficialAccount\Application::class, $officialAccountFromMake);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OfficialAccount\Application::class, $officialAccount);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OfficialAccount\Application::class, $officialAccountFromMake);
 
         $expected = [
             'app_id' => 'corpid@123',
@@ -35,32 +35,32 @@ class FactoryTest extends TestCase
         $this->assertArraySubset($expected, $officialAccountFromMake['config']->all());
 
         $this->assertInstanceOf(
-            \EasyWeChat\OfficialAccount\Application::class,
+            \Fromthink\EasyWeChat\OfficialAccount\Application::class,
             Factory::officialAccount(['appid' => 'appid@456'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\OpenPlatform\Application::class,
+            \Fromthink\EasyWeChat\OpenPlatform\Application::class,
             Factory::openPlatform(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\MiniProgram\Application::class,
+            \Fromthink\EasyWeChat\MiniProgram\Application::class,
             Factory::miniProgram(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\Payment\Application::class,
+            \Fromthink\EasyWeChat\Payment\Application::class,
             Factory::payment(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\BasicService\Application::class,
+            \Fromthink\EasyWeChat\BasicService\Application::class,
             Factory::basicService(['appid' => 'appid@789'])
         );
 
         $this->assertInstanceOf(
-            \EasyWeChat\Work\Application::class,
+            \Fromthink\EasyWeChat\Work\Application::class,
             Factory::work(['appid' => 'appid@789'])
         );
     }

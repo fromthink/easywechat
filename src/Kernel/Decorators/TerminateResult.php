@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Decorators;
+namespace Fromthink\EasyWeChat\Kernel\Decorators;
 
 /**
  * Class TerminateResult.

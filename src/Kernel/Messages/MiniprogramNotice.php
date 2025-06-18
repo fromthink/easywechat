@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Fromthink\EasyWeChat\Kernel\Messages;
 
 class MiniprogramNotice extends Message
 {

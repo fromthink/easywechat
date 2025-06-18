@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Http;
+namespace Fromthink\EasyWeChat\Tests\Kernel\Http;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Http\Response;
+use Fromthink\EasyWeChat\Kernel\Support\Collection;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ResponseTest extends TestCase
 {

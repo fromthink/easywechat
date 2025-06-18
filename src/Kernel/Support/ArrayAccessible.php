@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Support;
+namespace Fromthink\EasyWeChat\Kernel\Support;
 
 use ArrayAccess;
 use ArrayIterator;
-use EasyWeChat\Kernel\Contracts\Arrayable;
+use Fromthink\EasyWeChat\Kernel\Contracts\Arrayable;
 use IteratorAggregate;
 
 /**

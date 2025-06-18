@@ -5,13 +5,13 @@
  *
  */
 
-namespace EasyWeChat\Tests\MiniProgram\Business;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\Business;
 
-use EasyWeChat\Kernel\Messages\Raw;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\MiniProgram\Business\Client;
-use EasyWeChat\MiniProgram\Business\Messenger;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Messages\Raw;
+use Fromthink\EasyWeChat\Kernel\Messages\Text;
+use Fromthink\EasyWeChat\MiniProgram\Business\Client;
+use Fromthink\EasyWeChat\MiniProgram\Business\Messenger;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class MessengerTest extends TestCase
 {

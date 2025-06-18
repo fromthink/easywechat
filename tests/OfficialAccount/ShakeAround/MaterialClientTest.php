@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\ShakeAround;
+namespace Fromthink\EasyWeChat\Tests\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\OfficialAccount\ShakeAround\MaterialClient;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\MaterialClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class MaterialClientTest extends TestCase
 {

@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Jssdk;
+namespace Fromthink\EasyWeChat\Work\Jssdk;
 
-use EasyWeChat\BasicService\Jssdk\Client as BaseClient;
-use EasyWeChat\Kernel\Contracts\AccessTokenInterface;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support;
+use Fromthink\EasyWeChat\BasicService\Jssdk\Client as BaseClient;
+use Fromthink\EasyWeChat\Kernel\Contracts\AccessTokenInterface;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\Support;
 
 /**
  * Class Client.
@@ -51,9 +51,9 @@ class Client extends BaseClient
      *
      * @return array|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
@@ -81,9 +81,9 @@ class Client extends BaseClient
      *
      * @return array|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
@@ -109,9 +109,9 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
@@ -139,9 +139,9 @@ class Client extends BaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
@@ -173,11 +173,11 @@ class Client extends BaseClient
      * @param  bool  $refresh
      * @param  string  $type
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|mixed|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|mixed|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */

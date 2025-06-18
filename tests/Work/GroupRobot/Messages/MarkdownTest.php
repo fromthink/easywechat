@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\GroupRobot\Messages;
+namespace Fromthink\EasyWeChat\Tests\Work\GroupRobot\Messages;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\GroupRobot\Messages\Markdown;
-use EasyWeChat\Work\GroupRobot\Messages\Message;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Markdown;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Message;
 
 class MarkdownTest extends TestCase
 {

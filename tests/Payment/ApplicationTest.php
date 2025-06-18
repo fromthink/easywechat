@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment;
+namespace Fromthink\EasyWeChat\Tests\Payment;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Payment\Application;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -25,17 +25,17 @@ class ApplicationTest extends TestCase
             'mch_id' => 'foo-merchant-id',
         ]);
 
-        $this->assertInstanceOf(\EasyWeChat\BasicService\Url\Client::class, $app->url);
-        $this->assertInstanceOf(\EasyWeChat\OfficialAccount\Auth\AccessToken::class, $app->access_token);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Coupon\Client::class, $app->coupon);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Bill\Client::class, $app->bill);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Order\Client::class, $app->order);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Refund\Client::class, $app->refund);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Reverse\Client::class, $app->reverse);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Sandbox\Client::class, $app->sandbox);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Redpack\Client::class, $app->redpack);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Transfer\Client::class, $app->transfer);
-        $this->assertInstanceOf(\EasyWeChat\Payment\Jssdk\Client::class, $app->jssdk);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\BasicService\Url\Client::class, $app->url);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OfficialAccount\Auth\AccessToken::class, $app->access_token);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Coupon\Client::class, $app->coupon);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Bill\Client::class, $app->bill);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Order\Client::class, $app->order);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Refund\Client::class, $app->refund);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Reverse\Client::class, $app->reverse);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Sandbox\Client::class, $app->sandbox);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Redpack\Client::class, $app->redpack);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Transfer\Client::class, $app->transfer);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\Payment\Jssdk\Client::class, $app->jssdk);
     }
 
     public function testScheme()
@@ -98,7 +98,7 @@ class ApplicationTest extends TestCase
             'sandbox' => true,
             'key' => 'keyxxx',
         ]);
-        $sandbox = \Mockery::mock(\EasyWeChat\Payment\Sandbox\Client::class.'[getKey]', new ServiceContainer());
+        $sandbox = \Mockery::mock(\Fromthink\EasyWeChat\Payment\Sandbox\Client::class.'[getKey]', new ServiceContainer());
         $sandbox->expects()->getKey()->andReturn('88888888888888888888888888888888');
         $app['sandbox'] = $sandbox;
 

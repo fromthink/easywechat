@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Guide;
+namespace Fromthink\EasyWeChat\OfficialAccount\Guide;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Support\Collection;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException;
+use Fromthink\EasyWeChat\Kernel\Support\Collection;
 use Psr\Http\Message\ResponseInterface;
 
 /**

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Kf;
+namespace Fromthink\EasyWeChat\Work\Kf;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -17,7 +17,7 @@ use Pimple\ServiceProviderInterface;
 /**
  * Class ServiceProvider.
  *
- * @package EasyWeChat\Work\Kf
+ * @package Fromthink\EasyWeChat\Work\Kf
  *
  * @author 读心印 <aa24615@qq.com>
  */

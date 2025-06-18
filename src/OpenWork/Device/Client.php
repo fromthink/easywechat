@@ -1,9 +1,9 @@
 <?php
 
-namespace EasyWeChat\OpenWork\Device;
+namespace Fromthink\EasyWeChat\OpenWork\Device;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Device Client
@@ -26,9 +26,9 @@ class Client extends BaseClient
      * @param string $modelId  设备的型号id，在服务商管理端添加设备型号之后，可以查看型号id
      * @param string $deviceSn 硬件序列号，只能包含数字和大小写字母，长度最大为128字节，不可与之前已导入的相同
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -47,9 +47,9 @@ class Client extends BaseClient
      *
      * @param string $deviceSn 硬件序列号，只能包含数字和大小写字母，长度最大为128字节
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -69,8 +69,8 @@ class Client extends BaseClient
      *
      * @param string $deviceSn 硬件序列号，只能包含数字和大小写字母，长度最大为128字节
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -89,9 +89,9 @@ class Client extends BaseClient
      * @param int $offset 用于分页拉取数据，表示偏移量
      * @param int $limit  用于分页拉取数据，表示请求的数据条数
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -111,9 +111,9 @@ class Client extends BaseClient
      * @param string $deviceSn 硬件序列号，只能包含数字和大小写字母，长度最大为128字节
      * @param string $hint     提示参数，企业微信后台会将此参数透传给设备，设备可根据此参数来决定要上传哪部分日志，服务商可根据实际业务需求来使用此参数，最长为128字节
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -130,9 +130,9 @@ class Client extends BaseClient
      *
      * @param string $deviceSn 硬件序列号，只能包含数字和大小写字母，长度最大为128字节
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -150,9 +150,9 @@ class Client extends BaseClient
      *
      * @param string $deviceSn 硬件序列号，只能包含数字和大小写字母，长度最大为128字节
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -171,9 +171,9 @@ class Client extends BaseClient
      * @param string $deviceSn  硬件序列号，只能包含数字和大小写字母，长度最大为128字节
      * @param bool   $supported 是否支持打印机
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */

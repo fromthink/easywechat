@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\BasicService;
+namespace Fromthink\EasyWeChat\Tests\BasicService;
 
-use EasyWeChat\OfficialAccount\Application;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\OfficialAccount\Application;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -20,9 +20,9 @@ class ApplicationTest extends TestCase
     {
         $app = new Application();
 
-        $this->assertInstanceOf(\EasyWeChat\BasicService\Media\Client::class, $app->media);
-        $this->assertInstanceOf(\EasyWeChat\BasicService\Url\Client::class, $app->url);
-        $this->assertInstanceOf(\EasyWeChat\BasicService\QrCode\Client::class, $app->qrcode);
-        $this->assertInstanceOf(\EasyWeChat\BasicService\Jssdk\Client::class, $app->jssdk);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\BasicService\Media\Client::class, $app->media);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\BasicService\Url\Client::class, $app->url);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\BasicService\QrCode\Client::class, $app->qrcode);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\BasicService\Jssdk\Client::class, $app->jssdk);
     }
 }

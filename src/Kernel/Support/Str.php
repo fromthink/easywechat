@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Support;
+namespace Fromthink\EasyWeChat\Kernel\Support;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
 
 /**
  * Class Str.
@@ -62,7 +62,7 @@ class Str
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\RuntimeException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException
      */
     public static function random($length = 16)
     {

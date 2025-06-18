@@ -1,9 +1,9 @@
 <?php
 
-namespace EasyWeChat\Tests\MiniProgram\Shipping;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\Shipping;
 
-use EasyWeChat\MiniProgram\Shipping\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\MiniProgram\Shipping\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

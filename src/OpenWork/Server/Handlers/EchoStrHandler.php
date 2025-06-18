@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Server\Handlers;
+namespace Fromthink\EasyWeChat\OpenWork\Server\Handlers;
 
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\Contracts\EventHandlerInterface;
+use Fromthink\EasyWeChat\Kernel\Decorators\FinallyResult;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * EchoStrHandler.

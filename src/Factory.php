@@ -14,14 +14,14 @@ namespace EasyWeChat;
 /**
  * Class Factory.
  *
- * @method static \EasyWeChat\Payment\Application            payment(array $config)
- * @method static \EasyWeChat\MiniProgram\Application        miniProgram(array $config)
- * @method static \EasyWeChat\OpenPlatform\Application       openPlatform(array $config)
- * @method static \EasyWeChat\OfficialAccount\Application    officialAccount(array $config)
- * @method static \EasyWeChat\BasicService\Application       basicService(array $config)
- * @method static \EasyWeChat\Work\Application               work(array $config)
- * @method static \EasyWeChat\OpenWork\Application           openWork(array $config)
- * @method static \EasyWeChat\MicroMerchant\Application      microMerchant(array $config)
+ * @method static \Fromthink\EasyWeChat\Payment\Application            payment(array $config)
+ * @method static \Fromthink\EasyWeChat\MiniProgram\Application        miniProgram(array $config)
+ * @method static \Fromthink\EasyWeChat\OpenPlatform\Application       openPlatform(array $config)
+ * @method static \Fromthink\EasyWeChat\OfficialAccount\Application    officialAccount(array $config)
+ * @method static \Fromthink\EasyWeChat\BasicService\Application       basicService(array $config)
+ * @method static \Fromthink\EasyWeChat\Work\Application               work(array $config)
+ * @method static \Fromthink\EasyWeChat\OpenWork\Application           openWork(array $config)
+ * @method static \Fromthink\EasyWeChat\MicroMerchant\Application      microMerchant(array $config)
  */
 class Factory
 {
@@ -29,7 +29,7 @@ class Factory
      * @param string $name
      * @param array  $config
      *
-     * @return \EasyWeChat\Kernel\ServiceContainer
+     * @return \Fromthink\EasyWeChat\Kernel\ServiceContainer
      */
     public static function make($name, array $config)
     {

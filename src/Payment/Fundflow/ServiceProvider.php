@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Fundflow;
+namespace Fromthink\EasyWeChat\Payment\Fundflow;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

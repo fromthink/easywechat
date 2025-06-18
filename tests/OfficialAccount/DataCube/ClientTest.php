@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\DataCube;
+namespace Fromthink\EasyWeChat\Tests\OfficialAccount\DataCube;
 
-use EasyWeChat\OfficialAccount\DataCube\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\OfficialAccount\DataCube\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

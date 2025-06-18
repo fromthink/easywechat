@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel;
+namespace Fromthink\EasyWeChat\Tests\Kernel;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Config;
-use EasyWeChat\Kernel\Log\LogManager;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\Config;
+use Fromthink\EasyWeChat\Kernel\Log\LogManager;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Tests\TestCase;
 use EasyWeChatComposer\Delegation\DelegationTo;
 use GuzzleHttp\Client;
 use Pimple\Container;

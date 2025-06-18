@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Contact;
+namespace Fromthink\EasyWeChat\OpenWork\Contact;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

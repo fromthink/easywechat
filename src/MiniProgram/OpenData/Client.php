@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\OpenData;
+namespace Fromthink\EasyWeChat\MiniProgram\OpenData;
 
-use EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -27,9 +27,9 @@ class Client extends BaseClient
      * @param string $sessionKey
      * @param array  $key
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function removeUserStorage(string $openid, string $sessionKey, array $key)
@@ -51,9 +51,9 @@ class Client extends BaseClient
      * @param string $sessionKey
      * @param array  $kvList
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function setUserStorage(string $openid, string $sessionKey, array $kvList)

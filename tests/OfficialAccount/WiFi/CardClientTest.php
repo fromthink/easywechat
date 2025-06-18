@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\WiFi;
+namespace Fromthink\EasyWeChat\Tests\OfficialAccount\WiFi;
 
-use EasyWeChat\OfficialAccount\WiFi\CardClient;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\OfficialAccount\WiFi\CardClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class CardClientTest extends TestCase
 {

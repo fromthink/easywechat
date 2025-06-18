@@ -19,7 +19,7 @@
  * @see      http://overtrue.me
  */
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Fromthink\EasyWeChat\Kernel\Messages;
 
 /**
  * Class Card.

@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\AppCode;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\AppCode;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\MiniProgram\AppCode\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Http\Response;
+use Fromthink\EasyWeChat\Kernel\Http\StreamResponse;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\MiniProgram\AppCode\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
@@ -25,7 +25,7 @@ class ClientTest extends TestCase
     {
         parent::setUp();
 
-        $this->mockStream = new \EasyWeChat\Kernel\Http\Response(200, [
+        $this->mockStream = new \Fromthink\EasyWeChat\Kernel\Http\Response(200, [
             'Content-disposition' => 'attachment',
         ]);
     }

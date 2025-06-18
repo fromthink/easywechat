@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Security;
+namespace Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Security;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

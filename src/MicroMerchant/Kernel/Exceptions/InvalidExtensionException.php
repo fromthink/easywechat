@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Kernel\Exceptions;
+namespace Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions;
 
-use EasyWeChat\Kernel\Exceptions\Exception;
+use Fromthink\EasyWeChat\Kernel\Exceptions\Exception;
 
 /**
  * Class InvalidExtensionException.

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Soter;
+namespace Fromthink\EasyWeChat\MiniProgram\Soter;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

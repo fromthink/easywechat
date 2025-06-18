@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Decorators;
+namespace Fromthink\EasyWeChat\Tests\Kernel\Decorators;
 
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Decorators\FinallyResult;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class FinallyResultTest extends TestCase
 {

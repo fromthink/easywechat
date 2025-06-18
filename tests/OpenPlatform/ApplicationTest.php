@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform;
+namespace Fromthink\EasyWeChat\Tests\OpenPlatform;
 
-use EasyWeChat\OpenPlatform\Application;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\OpenPlatform\Application;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -20,11 +20,11 @@ class ApplicationTest extends TestCase
     {
         $app = new Application(['app_id' => 'app-id']);
 
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Auth\AccessToken::class, $app->access_token);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Auth\VerifyTicket::class, $app->verify_ticket);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Server\Guard::class, $app->server);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\CodeTemplate\Client::class, $app->code_template);
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Component\Client::class, $app->component);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OpenPlatform\Auth\AccessToken::class, $app->access_token);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OpenPlatform\Auth\VerifyTicket::class, $app->verify_ticket);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OpenPlatform\Server\Guard::class, $app->server);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OpenPlatform\CodeTemplate\Client::class, $app->code_template);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OpenPlatform\Component\Client::class, $app->component);
     }
 
     public function testGetPreAuthorizationUrl()

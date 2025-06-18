@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Material;
+namespace Fromthink\EasyWeChat\Tests\OfficialAccount\Material;
 
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Http\StreamResponse;
-use EasyWeChat\Kernel\Messages\Article;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OfficialAccount\Material\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Http\Response;
+use Fromthink\EasyWeChat\Kernel\Http\StreamResponse;
+use Fromthink\EasyWeChat\Kernel\Messages\Article;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\OfficialAccount\Material\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

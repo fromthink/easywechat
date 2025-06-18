@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Messages;
+namespace Fromthink\EasyWeChat\Kernel\Messages;
 
-use EasyWeChat\Kernel\Contracts\MessageInterface;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Kernel\Traits\HasAttributes;
+use Fromthink\EasyWeChat\Kernel\Contracts\MessageInterface;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Kernel\Support\XML;
+use Fromthink\EasyWeChat\Kernel\Traits\HasAttributes;
 
 /**
  * Class Messages.
@@ -151,7 +151,7 @@ abstract class Message implements MessageInterface
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function transformForJsonRequest(array $appends = [], $withType = true): array
     {
@@ -185,7 +185,7 @@ abstract class Message implements MessageInterface
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function propertiesToArray(array $data, array $aliases = []): array
     {

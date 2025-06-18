@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Fromthink\EasyWeChat\Tests\Kernel\Traits;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Traits\InteractsWithCache;
+use Fromthink\EasyWeChat\Tests\TestCase;
 use Psr\SimpleCache\CacheInterface;
 use Symfony\Component\Cache\Adapter\NullAdapter;
 use Symfony\Component\Cache\Psr16Cache;
@@ -37,7 +37,7 @@ class InteractsWithCacheTest extends TestCase
     /**
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function doTestPsr6Bridge()
     {

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Card;
+namespace Fromthink\EasyWeChat\OfficialAccount\Card;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

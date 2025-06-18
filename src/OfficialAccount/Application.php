@@ -9,51 +9,51 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount;
+namespace Fromthink\EasyWeChat\OfficialAccount;
 
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\BasicService;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\BasicService\Media\Client                     $media
- * @property \EasyWeChat\BasicService\Url\Client                       $url
- * @property \EasyWeChat\BasicService\QrCode\Client                    $qrcode
- * @property \EasyWeChat\BasicService\Jssdk\Client                     $jssdk
- * @property \EasyWeChat\OfficialAccount\Auth\AccessToken              $access_token
- * @property \EasyWeChat\OfficialAccount\Server\Guard                  $server
- * @property \EasyWeChat\OfficialAccount\User\UserClient               $user
- * @property \EasyWeChat\OfficialAccount\User\TagClient                $user_tag
- * @property \EasyWeChat\OfficialAccount\Menu\Client                   $menu
- * @property \EasyWeChat\OfficialAccount\TemplateMessage\Client        $template_message
- * @property \EasyWeChat\OfficialAccount\SubscribeMessage\Client       $subscribe_message
- * @property \EasyWeChat\OfficialAccount\Material\Client               $material
- * @property \EasyWeChat\OfficialAccount\CustomerService\Client        $customer_service
- * @property \EasyWeChat\OfficialAccount\CustomerService\SessionClient $customer_service_session
- * @property \EasyWeChat\OfficialAccount\Semantic\Client               $semantic
- * @property \EasyWeChat\OfficialAccount\DataCube\Client               $data_cube
- * @property \EasyWeChat\OfficialAccount\AutoReply\Client              $auto_reply
- * @property \EasyWeChat\OfficialAccount\Broadcasting\Client           $broadcasting
- * @property \EasyWeChat\OfficialAccount\Card\Card                     $card
- * @property \EasyWeChat\OfficialAccount\Device\Client                 $device
- * @property \EasyWeChat\OfficialAccount\ShakeAround\ShakeAround       $shake_around
- * @property \EasyWeChat\OfficialAccount\POI\Client                    $poi
- * @property \EasyWeChat\OfficialAccount\Store\Client                  $store
- * @property \EasyWeChat\OfficialAccount\Base\Client                   $base
- * @property \EasyWeChat\OfficialAccount\Comment\Client                $comment
- * @property \EasyWeChat\OfficialAccount\OCR\Client                    $ocr
- * @property \EasyWeChat\OfficialAccount\Goods\Client                  $goods
+ * @property \Fromthink\EasyWeChat\BasicService\Media\Client                     $media
+ * @property \Fromthink\EasyWeChat\BasicService\Url\Client                       $url
+ * @property \Fromthink\EasyWeChat\BasicService\QrCode\Client                    $qrcode
+ * @property \Fromthink\EasyWeChat\BasicService\Jssdk\Client                     $jssdk
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Auth\AccessToken              $access_token
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Server\Guard                  $server
+ * @property \Fromthink\EasyWeChat\OfficialAccount\User\UserClient               $user
+ * @property \Fromthink\EasyWeChat\OfficialAccount\User\TagClient                $user_tag
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Menu\Client                   $menu
+ * @property \Fromthink\EasyWeChat\OfficialAccount\TemplateMessage\Client        $template_message
+ * @property \Fromthink\EasyWeChat\OfficialAccount\SubscribeMessage\Client       $subscribe_message
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Material\Client               $material
+ * @property \Fromthink\EasyWeChat\OfficialAccount\CustomerService\Client        $customer_service
+ * @property \Fromthink\EasyWeChat\OfficialAccount\CustomerService\SessionClient $customer_service_session
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Semantic\Client               $semantic
+ * @property \Fromthink\EasyWeChat\OfficialAccount\DataCube\Client               $data_cube
+ * @property \Fromthink\EasyWeChat\OfficialAccount\AutoReply\Client              $auto_reply
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Broadcasting\Client           $broadcasting
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Card\Card                     $card
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Device\Client                 $device
+ * @property \Fromthink\EasyWeChat\OfficialAccount\ShakeAround\ShakeAround       $shake_around
+ * @property \Fromthink\EasyWeChat\OfficialAccount\POI\Client                    $poi
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Store\Client                  $store
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Base\Client                   $base
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Comment\Client                $comment
+ * @property \Fromthink\EasyWeChat\OfficialAccount\OCR\Client                    $ocr
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Goods\Client                  $goods
  * @property \Overtrue\Socialite\Providers\WeChat                      $oauth
- * @property \EasyWeChat\OfficialAccount\WiFi\Client                   $wifi
- * @property \EasyWeChat\OfficialAccount\WiFi\CardClient               $wifi_card
- * @property \EasyWeChat\OfficialAccount\WiFi\DeviceClient             $wifi_device
- * @property \EasyWeChat\OfficialAccount\WiFi\ShopClient               $wifi_shop
- * @property \EasyWeChat\OfficialAccount\Guide\Client                  $guide
- * @property \EasyWeChat\OfficialAccount\Draft\Client                  $draft
- * @property \EasyWeChat\OfficialAccount\FreePublish\Client            $free_publish
+ * @property \Fromthink\EasyWeChat\OfficialAccount\WiFi\Client                   $wifi
+ * @property \Fromthink\EasyWeChat\OfficialAccount\WiFi\CardClient               $wifi_card
+ * @property \Fromthink\EasyWeChat\OfficialAccount\WiFi\DeviceClient             $wifi_device
+ * @property \Fromthink\EasyWeChat\OfficialAccount\WiFi\ShopClient               $wifi_shop
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Guide\Client                  $guide
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Draft\Client                  $draft
+ * @property \Fromthink\EasyWeChat\OfficialAccount\FreePublish\Client            $free_publish
  */
 class Application extends ServiceContainer
 {

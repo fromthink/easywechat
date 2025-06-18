@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\MiniProgram;
+namespace Fromthink\EasyWeChat\OpenWork\MiniProgram;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Class Client.
@@ -22,7 +22,7 @@ class Client extends BaseClient
     /**
      * Client constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Fromthink\EasyWeChat\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -34,9 +34,9 @@ class Client extends BaseClient
      *
      * @param string $code
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function session(string $code)
     {

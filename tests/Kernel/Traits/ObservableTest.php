@@ -9,16 +9,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Traits;
+namespace Fromthink\EasyWeChat\Tests\Kernel\Traits;
 
 use Closure;
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use EasyWeChat\Kernel\Decorators\FinallyResult;
-use EasyWeChat\Kernel\Decorators\TerminateResult;
-use EasyWeChat\Kernel\Exceptions\Exception;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Traits\Observable;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Contracts\EventHandlerInterface;
+use Fromthink\EasyWeChat\Kernel\Decorators\FinallyResult;
+use Fromthink\EasyWeChat\Kernel\Decorators\TerminateResult;
+use Fromthink\EasyWeChat\Kernel\Exceptions\Exception;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\Traits\Observable;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ObservableTest extends TestCase
 {
@@ -311,7 +311,7 @@ class ObservableTest extends TestCase
             $c = new DummyClassForObservableTest();
             $c->push('stdClass', 'foo');
         } catch (\Exception $e) {
-            $this->assertSame('Class "stdClass" not an instance of "EasyWeChat\Kernel\Contracts\EventHandlerInterface".', $e->getMessage());
+            $this->assertSame('Class "stdClass" not an instance of "Fromthink\EasyWeChat\Kernel\Contracts\EventHandlerInterface".', $e->getMessage());
         }
 
         try {

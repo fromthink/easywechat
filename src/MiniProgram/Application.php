@@ -9,56 +9,56 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram;
+namespace Fromthink\EasyWeChat\MiniProgram;
 
-use EasyWeChat\BasicService;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\BasicService;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\MiniProgram\Auth\AccessToken           $access_token
- * @property \EasyWeChat\MiniProgram\DataCube\Client            $data_cube
- * @property \EasyWeChat\MiniProgram\AppCode\Client             $app_code
- * @property \EasyWeChat\MiniProgram\Auth\Client                $auth
- * @property \EasyWeChat\OfficialAccount\Server\Guard           $server
- * @property \EasyWeChat\MiniProgram\Encryptor                  $encryptor
- * @property \EasyWeChat\MiniProgram\TemplateMessage\Client     $template_message
- * @property \EasyWeChat\OfficialAccount\CustomerService\Client $customer_service
- * @property \EasyWeChat\MiniProgram\Plugin\Client              $plugin
- * @property \EasyWeChat\MiniProgram\Plugin\DevClient           $plugin_dev
- * @property \EasyWeChat\MiniProgram\UniformMessage\Client      $uniform_message
- * @property \EasyWeChat\MiniProgram\ActivityMessage\Client     $activity_message
- * @property \EasyWeChat\MiniProgram\Express\Client             $express
- * @property \EasyWeChat\MiniProgram\NearbyPoi\Client           $nearby_poi
- * @property \EasyWeChat\MiniProgram\OCR\Client                 $ocr
- * @property \EasyWeChat\MiniProgram\Soter\Client               $soter
- * @property \EasyWeChat\BasicService\Media\Client              $media
- * @property \EasyWeChat\BasicService\ContentSecurity\Client    $content_security
- * @property \EasyWeChat\MiniProgram\Mall\ForwardsMall          $mall
- * @property \EasyWeChat\MiniProgram\SubscribeMessage\Client    $subscribe_message
- * @property \EasyWeChat\MiniProgram\RealtimeLog\Client         $realtime_log
- * @property \EasyWeChat\MiniProgram\RiskControl\Client         $risk_control
- * @property \EasyWeChat\MiniProgram\Search\Client              $search
- * @property \EasyWeChat\MiniProgram\Live\Client                $live
- * @property \EasyWeChat\MiniProgram\Broadcast\Client           $broadcast
- * @property \EasyWeChat\MiniProgram\UrlScheme\Client           $url_scheme
- * @property \EasyWeChat\MiniProgram\Union\Client               $union
- * @property \EasyWeChat\MiniProgram\Shop\Register\Client       $shop_register
- * @property \EasyWeChat\MiniProgram\Shop\Basic\Client          $shop_basic
- * @property \EasyWeChat\MiniProgram\Shop\Account\Client        $shop_account
- * @property \EasyWeChat\MiniProgram\Shop\Spu\Client            $shop_spu
- * @property \EasyWeChat\MiniProgram\Shop\Order\Client          $shop_order
- * @property \EasyWeChat\MiniProgram\Shop\Delivery\Client       $shop_delivery
- * @property \EasyWeChat\MiniProgram\Shop\Aftersale\Client      $shop_aftersale
- * @property \EasyWeChat\MiniProgram\Business\Client            $business
- * @property \EasyWeChat\MiniProgram\UrlLink\Client             $url_link
- * @property \EasyWeChat\MiniProgram\QrCode\Client              $qr_code
- * @property \EasyWeChat\MiniProgram\PhoneNumber\Client         $phone_number
- * @property \EasyWeChat\MiniProgram\ShortLink\Client           $short_link
- * @property \EasyWeChat\MiniProgram\Shipping\Client            $shipping
+ * @property \Fromthink\EasyWeChat\MiniProgram\Auth\AccessToken           $access_token
+ * @property \Fromthink\EasyWeChat\MiniProgram\DataCube\Client            $data_cube
+ * @property \Fromthink\EasyWeChat\MiniProgram\AppCode\Client             $app_code
+ * @property \Fromthink\EasyWeChat\MiniProgram\Auth\Client                $auth
+ * @property \Fromthink\EasyWeChat\OfficialAccount\Server\Guard           $server
+ * @property \Fromthink\EasyWeChat\MiniProgram\Encryptor                  $encryptor
+ * @property \Fromthink\EasyWeChat\MiniProgram\TemplateMessage\Client     $template_message
+ * @property \Fromthink\EasyWeChat\OfficialAccount\CustomerService\Client $customer_service
+ * @property \Fromthink\EasyWeChat\MiniProgram\Plugin\Client              $plugin
+ * @property \Fromthink\EasyWeChat\MiniProgram\Plugin\DevClient           $plugin_dev
+ * @property \Fromthink\EasyWeChat\MiniProgram\UniformMessage\Client      $uniform_message
+ * @property \Fromthink\EasyWeChat\MiniProgram\ActivityMessage\Client     $activity_message
+ * @property \Fromthink\EasyWeChat\MiniProgram\Express\Client             $express
+ * @property \Fromthink\EasyWeChat\MiniProgram\NearbyPoi\Client           $nearby_poi
+ * @property \Fromthink\EasyWeChat\MiniProgram\OCR\Client                 $ocr
+ * @property \Fromthink\EasyWeChat\MiniProgram\Soter\Client               $soter
+ * @property \Fromthink\EasyWeChat\BasicService\Media\Client              $media
+ * @property \Fromthink\EasyWeChat\BasicService\ContentSecurity\Client    $content_security
+ * @property \Fromthink\EasyWeChat\MiniProgram\Mall\ForwardsMall          $mall
+ * @property \Fromthink\EasyWeChat\MiniProgram\SubscribeMessage\Client    $subscribe_message
+ * @property \Fromthink\EasyWeChat\MiniProgram\RealtimeLog\Client         $realtime_log
+ * @property \Fromthink\EasyWeChat\MiniProgram\RiskControl\Client         $risk_control
+ * @property \Fromthink\EasyWeChat\MiniProgram\Search\Client              $search
+ * @property \Fromthink\EasyWeChat\MiniProgram\Live\Client                $live
+ * @property \Fromthink\EasyWeChat\MiniProgram\Broadcast\Client           $broadcast
+ * @property \Fromthink\EasyWeChat\MiniProgram\UrlScheme\Client           $url_scheme
+ * @property \Fromthink\EasyWeChat\MiniProgram\Union\Client               $union
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Register\Client       $shop_register
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Basic\Client          $shop_basic
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Account\Client        $shop_account
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Spu\Client            $shop_spu
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Order\Client          $shop_order
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Delivery\Client       $shop_delivery
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shop\Aftersale\Client      $shop_aftersale
+ * @property \Fromthink\EasyWeChat\MiniProgram\Business\Client            $business
+ * @property \Fromthink\EasyWeChat\MiniProgram\UrlLink\Client             $url_link
+ * @property \Fromthink\EasyWeChat\MiniProgram\QrCode\Client              $qr_code
+ * @property \Fromthink\EasyWeChat\MiniProgram\PhoneNumber\Client         $phone_number
+ * @property \Fromthink\EasyWeChat\MiniProgram\ShortLink\Client           $short_link
+ * @property \Fromthink\EasyWeChat\MiniProgram\Shipping\Client            $shipping
  */
 class Application extends ServiceContainer
 {

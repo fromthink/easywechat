@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Kernel;
+namespace Fromthink\EasyWeChat\MicroMerchant\Kernel;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\MicroMerchant\Application;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException;
-use EasyWeChat\Payment\Kernel\BaseClient as PaymentBaseClient;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Support;
+use Fromthink\EasyWeChat\MicroMerchant\Application;
+use Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException;
+use Fromthink\EasyWeChat\Payment\Kernel\BaseClient as PaymentBaseClient;
 
 /**
  * Class BaseClient.
@@ -33,7 +33,7 @@ class BaseClient extends PaymentBaseClient
     /**
      * BaseClient constructor.
      *
-     * @param \EasyWeChat\MicroMerchant\Application $app
+     * @param \Fromthink\EasyWeChat\MicroMerchant\Application $app
      */
     public function __construct(Application $app)
     {
@@ -61,11 +61,11 @@ class BaseClient extends PaymentBaseClient
      * @param array  $query
      * @param bool   $returnResponse
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function httpUpload(string $url, array $files = [], array $form = [], array $query = [], $returnResponse = false)
@@ -125,11 +125,11 @@ class BaseClient extends PaymentBaseClient
      * @param array  $options
      * @param bool   $returnResponse
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function request(string $endpoint, array $params = [], $method = 'post', array $options = [], $returnResponse = false)
@@ -164,8 +164,8 @@ class BaseClient extends PaymentBaseClient
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
      */
     protected function processParams(array $params)
     {
@@ -192,8 +192,8 @@ class BaseClient extends PaymentBaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\EncryptException
      */
     protected function encryptSensitiveInformation(string $string)
     {
@@ -241,7 +241,7 @@ class BaseClient extends PaymentBaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function getSign(array $params)
     {

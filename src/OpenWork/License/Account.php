@@ -8,10 +8,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\License;
+namespace Fromthink\EasyWeChat\OpenWork\License;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * License Account Client
@@ -37,9 +37,9 @@ class Account extends BaseClient
      * @param string $corpId     待绑定激活的成员所属企业corpId，只支持加密的corpId
      * @param string $userId     待绑定激活的企业成员userId 。只支持加密的userId
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -63,9 +63,9 @@ class Account extends BaseClient
      * @param string $corpId    待绑定激活的成员所属企业corpid，只支持加密的corpid
      * @param array $activeList 需要激活的帐号列表,每个数组包含<b>active_code</b>帐号激活码和<b>userid</b>待绑定激活的企业成员加密userid
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -86,9 +86,9 @@ class Account extends BaseClient
      * @param string $corpId
      * @param string $activeCode
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -109,9 +109,9 @@ class Account extends BaseClient
      * @param string   $corpId         要查询的企业的corpid，只支持加密的corpid
      * @param string[] $activeCodeList 激活码列表，最多不超过1000个
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -133,9 +133,9 @@ class Account extends BaseClient
      * @param string|null $cursor 返回的最大记录数，整型，最大值1000，默认值500
      * @param int         $limit  用于分页查询的游标，字符串类型，由上一次调用返回，首次调用可不填
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -157,9 +157,9 @@ class Account extends BaseClient
      * @param string $corpId 企业corpId ，只支持加密的corpId
      * @param string $userId 待查询员工的userid，只支持加密的userid
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -189,9 +189,9 @@ class Account extends BaseClient
      * @param string $corpId       待绑定激活的成员所属企业corpId，只支持加密的corpId
      * @param array  $transferList 待转移成员列表，每个数组包含<b>handover_userid</b>转移成员的userid和<b>takeover_userid</b>接收成员的userid
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection
@@ -213,9 +213,9 @@ class Account extends BaseClient
      * @param string $toCorpid   下游企业corpid。支持明文或者密文的corpid
      * @param array  $activeCode 分享的接口许可激活码。单次分享激活码不可超过1000个，累计分享给同一下游企业的激活码总数不可超过上下游通讯录中该下游企业人数的2倍
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      * @noinspection SpellCheckingInspection

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Certficates;
+namespace Fromthink\EasyWeChat\MicroMerchant\Certficates;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\MicroMerchant\Kernel\BaseClient;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\MicroMerchant\Kernel\BaseClient;
+use Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException;
 
 /**
  * Class Client.
@@ -28,11 +28,11 @@ class Client extends BaseClient
      *
      * @param bool $returnRaw
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function get(bool $returnRaw = false)
@@ -69,7 +69,7 @@ class Client extends BaseClient
      *
      * @return string
      *
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidExtensionException
      */
     public function decrypt(array $encryptCertificate)
     {

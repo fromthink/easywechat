@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\Union;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\Union;
 
-use EasyWeChat\MiniProgram\Union\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\MiniProgram\Union\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

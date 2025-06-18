@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel\Support;
+namespace Fromthink\EasyWeChat\Tests\Kernel\Support;
 
-use EasyWeChat\Kernel\Support\Arr;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Support\Arr;
+use Fromthink\EasyWeChat\Kernel\Support\Collection;
+use Fromthink\EasyWeChat\Tests\TestCase;
 use stdClass;
 
 class ArrTest extends TestCase

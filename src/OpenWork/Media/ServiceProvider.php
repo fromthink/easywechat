@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\Media;
+namespace Fromthink\EasyWeChat\OpenWork\Media;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

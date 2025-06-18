@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OpenPlatform\Authorizer\MiniProgram;
+namespace Fromthink\EasyWeChat\Tests\OpenPlatform\Authorizer\MiniProgram;
 
-use EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Application;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Application;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -20,6 +20,6 @@ class ApplicationTest extends TestCase
     {
         $app = new Application(['app_id' => 'app-id']);
 
-        $this->assertInstanceOf(\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client::class, $app->account);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client::class, $app->account);
     }
 }

@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\ExternalContact;
+namespace Fromthink\EasyWeChat\Tests\Work\ExternalContact;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\ExternalContact\InterceptClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\ExternalContact\InterceptClient;
 
 /**
  * Class InterceptClientTest.
  *
- * @package EasyWeChat\Tests\Work\ExternalContact
+ * @package Fromthink\EasyWeChat\Tests\Work\ExternalContact
  *
  * @author 读心印 <aa24615@qq.com>
  */

@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Order;
+namespace Fromthink\EasyWeChat\Payment\Order;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\Kernel\Support\Collection;
-use EasyWeChat\Payment\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException;
+use Fromthink\EasyWeChat\Kernel\Support;
+use Fromthink\EasyWeChat\Kernel\Support\Collection;
+use Fromthink\EasyWeChat\Payment\Kernel\BaseClient;
 use Psr\Http\Message\ResponseInterface;
 
 class Client extends BaseClient
@@ -28,8 +28,8 @@ class Client extends BaseClient
      *
      * @return ResponseInterface|Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function unify(array $params, $isContract = false)
@@ -92,8 +92,8 @@ class Client extends BaseClient
      *
      * @return ResponseInterface|Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function query(array $params)
@@ -110,8 +110,8 @@ class Client extends BaseClient
      *
      * @return ResponseInterface|Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function close(string $tradeNo)

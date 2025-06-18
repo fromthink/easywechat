@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Providers;
+namespace Fromthink\EasyWeChat\Kernel\Providers;
 
 use EasyWeChatComposer\Extension;
 use Pimple\Container;

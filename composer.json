@@ -42,7 +42,7 @@
   },
   "autoload": {
     "psr-4": {
-      "EasyWeChat\\": "src/"
+      "Fromthink\\EasyWeChat\\": "src/"
     },
     "files": [
       "src/Kernel/Support/Helpers.php",
@@ -51,7 +51,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "EasyWeChat\\Tests\\": "tests/"
+      "Fromthink\\EasyWeChat\\Tests\\": "tests/"
     }
   },
   "extra": {

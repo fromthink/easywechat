@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MicroMerchant;
+namespace Fromthink\EasyWeChat\Tests\MicroMerchant;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\MicroMerchant\Application;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\MicroMerchant\Application;
+use Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ApplicationTest extends TestCase
 {
@@ -23,11 +23,11 @@ class ApplicationTest extends TestCase
         $app = new Application([
             'mch_id' => 'foo-merchant-id',
         ]);
-        $this->assertInstanceOf(\EasyWeChat\MicroMerchant\Certficates\Client::class, $app->certficates);
-        $this->assertInstanceOf(\EasyWeChat\MicroMerchant\Base\Client::class, $app->base);
-        $this->assertInstanceOf(\EasyWeChat\MicroMerchant\Material\Client::class, $app->material);
-        $this->assertInstanceOf(\EasyWeChat\MicroMerchant\MerchantConfig\Client::class, $app->merchantConfig);
-        $this->assertInstanceOf(\EasyWeChat\MicroMerchant\Withdraw\Client::class, $app->withdraw);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\MicroMerchant\Certficates\Client::class, $app->certficates);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\MicroMerchant\Base\Client::class, $app->base);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\MicroMerchant\Material\Client::class, $app->material);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\MicroMerchant\MerchantConfig\Client::class, $app->merchantConfig);
+        $this->assertInstanceOf(\Fromthink\EasyWeChat\MicroMerchant\Withdraw\Client::class, $app->withdraw);
     }
 
     public function testGetKey()

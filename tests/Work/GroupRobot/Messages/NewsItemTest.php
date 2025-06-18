@@ -11,9 +11,9 @@
 
 namespace Work\GroupRobot\Messages;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\GroupRobot\Messages\Message;
-use EasyWeChat\Work\GroupRobot\Messages\NewsItem;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Message;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\NewsItem;
 
 class NewsItemTest extends TestCase
 {

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Events;
+namespace Fromthink\EasyWeChat\Kernel\Events;
 
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Class ApplicationInitialized.
@@ -21,12 +21,12 @@ use EasyWeChat\Kernel\ServiceContainer;
 class ApplicationInitialized
 {
     /**
-     * @var \EasyWeChat\Kernel\ServiceContainer
+     * @var \Fromthink\EasyWeChat\Kernel\ServiceContainer
      */
     public $app;
 
     /**
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Fromthink\EasyWeChat\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {

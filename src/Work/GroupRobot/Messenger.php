@@ -9,13 +9,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\GroupRobot;
+namespace Fromthink\EasyWeChat\Work\GroupRobot;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Work\GroupRobot\Messages\Message;
-use EasyWeChat\Work\GroupRobot\Messages\Text;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Message;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Text;
 
 /**
  * Class Messenger.
@@ -86,7 +86,7 @@ class Messenger
     /**
      * @param string|Message|null $message
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
      * @throws RuntimeException
      * @throws InvalidArgumentException

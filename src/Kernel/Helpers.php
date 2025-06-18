@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Fromthink\EasyWeChat\Kernel;
 
-use EasyWeChat\Kernel\Contracts\Arrayable;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\Arr;
-use EasyWeChat\Kernel\Support\Collection;
+use Fromthink\EasyWeChat\Kernel\Contracts\Arrayable;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Kernel\Support\Arr;
+use Fromthink\EasyWeChat\Kernel\Support\Collection;
 
 function data_get($data, $key, $default = null)
 {

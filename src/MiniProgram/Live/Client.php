@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Live;
+namespace Fromthink\EasyWeChat\MiniProgram\Live;
 
-use EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -26,8 +26,8 @@ class Client extends BaseClient
      * @param int $start
      * @param int $limit
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @deprecated This method has been merged into `\EasyWeChat\MiniProgram\Broadcast`
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @deprecated This method has been merged into `\Fromthink\EasyWeChat\MiniProgram\Broadcast`
      */
     public function getRooms(int $start = 0, int $limit = 10)
     {
@@ -46,8 +46,8 @@ class Client extends BaseClient
      * @param int $start
      * @param int $limit
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @deprecated This method has been merged into `\EasyWeChat\MiniProgram\Broadcast`
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @deprecated This method has been merged into `\Fromthink\EasyWeChat\MiniProgram\Broadcast`
      */
     public function getPlaybacks(int $roomId, int $start = 0, int $limit = 10)
     {

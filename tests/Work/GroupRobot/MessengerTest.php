@@ -9,18 +9,18 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\GroupRobot;
+namespace Fromthink\EasyWeChat\Tests\Work\GroupRobot;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\GroupRobot\Client;
-use EasyWeChat\Work\GroupRobot\Messages\Image;
-use EasyWeChat\Work\GroupRobot\Messages\Markdown;
-use EasyWeChat\Work\GroupRobot\Messages\News;
-use EasyWeChat\Work\GroupRobot\Messages\NewsItem;
-use EasyWeChat\Work\GroupRobot\Messages\Text;
-use EasyWeChat\Work\GroupRobot\Messenger;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\GroupRobot\Client;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Image;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Markdown;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\News;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\NewsItem;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messages\Text;
+use Fromthink\EasyWeChat\Work\GroupRobot\Messenger;
 
 class MessengerTest extends TestCase
 {

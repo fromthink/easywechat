@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Clauses;
+namespace Fromthink\EasyWeChat\Kernel\Clauses;
 
 /**
  * Class Clause.

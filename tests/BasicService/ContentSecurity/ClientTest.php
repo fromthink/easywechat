@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\BasicService\ContentSecurity;
+namespace Fromthink\EasyWeChat\Tests\BasicService\ContentSecurity;
 
-use EasyWeChat\BasicService\ContentSecurity\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\BasicService\ContentSecurity\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

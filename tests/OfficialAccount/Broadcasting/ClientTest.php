@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\Broadcasting;
+namespace Fromthink\EasyWeChat\Tests\OfficialAccount\Broadcasting;
 
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Messages\Card;
-use EasyWeChat\Kernel\Messages\Image;
-use EasyWeChat\Kernel\Messages\Media;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\OfficialAccount\Broadcasting\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Kernel\Messages\Card;
+use Fromthink\EasyWeChat\Kernel\Messages\Image;
+use Fromthink\EasyWeChat\Kernel\Messages\Media;
+use Fromthink\EasyWeChat\Kernel\Messages\Text;
+use Fromthink\EasyWeChat\OfficialAccount\Broadcasting\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {

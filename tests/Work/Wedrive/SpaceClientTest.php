@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Wedrive;
+namespace Fromthink\EasyWeChat\Tests\Work\Wedrive;
 
-use EasyWeChat\Kernel\Support\Arr;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Wedrive\SpaceClient;
+use Fromthink\EasyWeChat\Kernel\Support\Arr;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\Wedrive\SpaceClient;
 
 class SpaceClientTest extends TestCase
 {

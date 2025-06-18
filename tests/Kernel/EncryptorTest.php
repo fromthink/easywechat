@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Kernel;
+namespace Fromthink\EasyWeChat\Tests\Kernel;
 
-use EasyWeChat\Kernel\Encryptor;
-use EasyWeChat\Kernel\Exceptions\RuntimeException;
-use EasyWeChat\Kernel\Support\XML;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Encryptor;
+use Fromthink\EasyWeChat\Kernel\Exceptions\RuntimeException;
+use Fromthink\EasyWeChat\Kernel\Support\XML;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class EncryptorTest extends TestCase
 {

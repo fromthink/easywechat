@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Sandbox;
+namespace Fromthink\EasyWeChat\Tests\Payment\Sandbox;
 
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Kernel\Exceptions\SandboxException;
-use EasyWeChat\Payment\Sandbox\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Payment\Application;
+use Fromthink\EasyWeChat\Payment\Kernel\Exceptions\SandboxException;
+use Fromthink\EasyWeChat\Payment\Sandbox\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 use Psr\SimpleCache\CacheInterface;
 
 class ClientTest extends TestCase

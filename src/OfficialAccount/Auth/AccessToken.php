@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Auth;
+namespace Fromthink\EasyWeChat\OfficialAccount\Auth;
 
-use EasyWeChat\Kernel\AccessToken as BaseAccessToken;
+use Fromthink\EasyWeChat\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * Class AuthorizerAccessToken.

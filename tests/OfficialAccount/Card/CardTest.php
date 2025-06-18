@@ -9,25 +9,25 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Test\OfficialAccount\Card;
+namespace Fromthink\EasyWeChat\Test\OfficialAccount\Card;
 
-use EasyWeChat\OfficialAccount\Application;
-use EasyWeChat\OfficialAccount\Card\BoardingPassClient;
-use EasyWeChat\OfficialAccount\Card\Card;
-use EasyWeChat\OfficialAccount\Card\Client;
-use EasyWeChat\OfficialAccount\Card\CodeClient;
-use EasyWeChat\OfficialAccount\Card\CoinClient;
-use EasyWeChat\OfficialAccount\Card\GeneralCardClient;
-use EasyWeChat\OfficialAccount\Card\GiftCardClient;
-use EasyWeChat\OfficialAccount\Card\GiftCardOrderClient;
-use EasyWeChat\OfficialAccount\Card\GiftCardPageClient;
-use EasyWeChat\OfficialAccount\Card\InvoiceClient;
-use EasyWeChat\OfficialAccount\Card\JssdkClient;
-use EasyWeChat\OfficialAccount\Card\MeetingTicketClient;
-use EasyWeChat\OfficialAccount\Card\MemberCardClient;
-use EasyWeChat\OfficialAccount\Card\MovieTicketClient;
-use EasyWeChat\OfficialAccount\Card\SubMerchantClient;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\OfficialAccount\Application;
+use Fromthink\EasyWeChat\OfficialAccount\Card\BoardingPassClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\Card;
+use Fromthink\EasyWeChat\OfficialAccount\Card\Client;
+use Fromthink\EasyWeChat\OfficialAccount\Card\CodeClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\CoinClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\GeneralCardClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\GiftCardClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\GiftCardOrderClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\GiftCardPageClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\InvoiceClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\JssdkClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\MeetingTicketClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\MemberCardClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\MovieTicketClient;
+use Fromthink\EasyWeChat\OfficialAccount\Card\SubMerchantClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class CardTest extends TestCase
 {

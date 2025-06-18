@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Material;
+namespace Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Material;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Http\StreamResponse;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\Http\StreamResponse;
 
 /**
  * Class Client.
@@ -35,7 +35,7 @@ class Client extends BaseClient
      *
      * @return mixed
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function get(string $mediaId)

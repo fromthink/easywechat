@@ -9,23 +9,23 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant;
+namespace Fromthink\EasyWeChat\MicroMerchant;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\Kernel\Support;
-use EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\Support;
+use Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException;
 
 /**
  * Class Application.
  *
  * @author liuml <liumenglei0211@gmail.com>
  *
- * @property \EasyWeChat\MicroMerchant\Certficates\Client    $certficates
- * @property \EasyWeChat\MicroMerchant\Material\Client       $material
- * @property \EasyWeChat\MicroMerchant\MerchantConfig\Client $merchantConfig
- * @property \EasyWeChat\MicroMerchant\Withdraw\Client       $withdraw
- * @property \EasyWeChat\MicroMerchant\Media\Client          $media
+ * @property \Fromthink\EasyWeChat\MicroMerchant\Certficates\Client    $certficates
+ * @property \Fromthink\EasyWeChat\MicroMerchant\Material\Client       $material
+ * @property \Fromthink\EasyWeChat\MicroMerchant\MerchantConfig\Client $merchantConfig
+ * @property \Fromthink\EasyWeChat\MicroMerchant\Withdraw\Client       $withdraw
+ * @property \Fromthink\EasyWeChat\MicroMerchant\Media\Client          $media
  *
  * @method mixed submitApplication(array $params)
  * @method mixed getStatus(string $applymentId, string $businessCode = '')
@@ -76,7 +76,7 @@ class Application extends ServiceContainer
     /**
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function getKey()
     {
@@ -136,8 +136,8 @@ class Application extends ServiceContainer
      *
      * @return bool
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\MicroMerchant\Kernel\Exceptions\InvalidSignException
      */
     public function verifySignature(array $data)
     {

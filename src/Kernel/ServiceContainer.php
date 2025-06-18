@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Fromthink\EasyWeChat\Kernel;
 
-use EasyWeChat\Kernel\Providers\ConfigServiceProvider;
-use EasyWeChat\Kernel\Providers\EventDispatcherServiceProvider;
-use EasyWeChat\Kernel\Providers\ExtensionServiceProvider;
-use EasyWeChat\Kernel\Providers\HttpClientServiceProvider;
-use EasyWeChat\Kernel\Providers\LogServiceProvider;
-use EasyWeChat\Kernel\Providers\RequestServiceProvider;
+use Fromthink\EasyWeChat\Kernel\Providers\ConfigServiceProvider;
+use Fromthink\EasyWeChat\Kernel\Providers\EventDispatcherServiceProvider;
+use Fromthink\EasyWeChat\Kernel\Providers\ExtensionServiceProvider;
+use Fromthink\EasyWeChat\Kernel\Providers\HttpClientServiceProvider;
+use Fromthink\EasyWeChat\Kernel\Providers\LogServiceProvider;
+use Fromthink\EasyWeChat\Kernel\Providers\RequestServiceProvider;
 use EasyWeChatComposer\Traits\WithAggregator;
 use Pimple\Container;
 
@@ -25,7 +25,7 @@ use Pimple\Container;
  *
  * @author overtrue <i@overtrue.me>
  *
- * @property \EasyWeChat\Kernel\Config                          $config
+ * @property \Fromthink\EasyWeChat\Kernel\Config                          $config
  * @property \Symfony\Component\HttpFoundation\Request          $request
  * @property \GuzzleHttp\Client                                 $http_client
  * @property \Monolog\Logger                                    $logger

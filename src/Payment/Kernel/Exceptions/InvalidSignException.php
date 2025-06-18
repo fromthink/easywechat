@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Kernel\Exceptions;
+namespace Fromthink\EasyWeChat\Payment\Kernel\Exceptions;
 
-use EasyWeChat\Kernel\Exceptions\Exception;
+use Fromthink\EasyWeChat\Kernel\Exceptions\Exception;
 
 class InvalidSignException extends Exception
 {

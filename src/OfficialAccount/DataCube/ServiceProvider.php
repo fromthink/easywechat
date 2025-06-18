@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\DataCube;
+namespace Fromthink\EasyWeChat\OfficialAccount\DataCube;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -20,7 +20,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Media;
+namespace Fromthink\EasyWeChat\MicroMerchant\Media;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

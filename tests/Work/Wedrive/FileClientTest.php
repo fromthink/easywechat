@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Wedrive;
+namespace Fromthink\EasyWeChat\Tests\Work\Wedrive;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Wedrive\FileClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\Wedrive\FileClient;
 
 class FileClientTest extends TestCase
 {

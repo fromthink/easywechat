@@ -9,16 +9,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Wedrive;
+namespace Fromthink\EasyWeChat\Work\Wedrive;
 
 use Pimple\Container;
 
 /**
  * Class Wedrive
  *
- * @property \EasyWeChat\Work\Wedrive\Client                 $base
- * @property \EasyWeChat\Work\Wedrive\SpaceClient            $space
- * @property \EasyWeChat\Work\Wedrive\FileClient             $file
+ * @property \Fromthink\EasyWeChat\Work\Wedrive\Client                 $base
+ * @property \Fromthink\EasyWeChat\Work\Wedrive\SpaceClient            $space
+ * @property \Fromthink\EasyWeChat\Work\Wedrive\FileClient             $file
  *
  * @author lio990527 <lio990527@163.com>
  */

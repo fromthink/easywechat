@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Mobile\Auth;
+namespace Fromthink\EasyWeChat\Tests\Work\Mobile\Auth;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Mobile\Auth\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\Mobile\Auth\Client;
 
 /**
  * Class Auth.

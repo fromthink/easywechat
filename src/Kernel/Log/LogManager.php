@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Log;
+namespace Fromthink\EasyWeChat\Kernel\Log;
 
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 use InvalidArgumentException;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\ErrorLogHandler;
@@ -33,7 +33,7 @@ use Psr\Log\LoggerInterface;
 class LogManager implements LoggerInterface
 {
     /**
-     * @var \EasyWeChat\Kernel\ServiceContainer
+     * @var \Fromthink\EasyWeChat\Kernel\ServiceContainer
      */
     protected $app;
 
@@ -70,7 +70,7 @@ class LogManager implements LoggerInterface
     /**
      * LogManager constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Fromthink\EasyWeChat\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {

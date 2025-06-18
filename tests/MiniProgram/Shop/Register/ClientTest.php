@@ -1,16 +1,16 @@
 <?php
 
-namespace EasyWeChat\Tests\MiniProgram\Shop\Register;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\Shop\Register;
 
-use EasyWeChat\MiniProgram\Shop\Register\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\MiniProgram\Shop\Register\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 /**
  * 自定义版交易组件开放接口
  *    申请接入接口
  *
  * Class ClientTest
- * @package EasyWeChat\Tests\MiniProgram\Shop\Register
+ * @package Fromthink\EasyWeChat\Tests\MiniProgram\Shop\Register
  */
 class ClientTest extends TestCase
 {

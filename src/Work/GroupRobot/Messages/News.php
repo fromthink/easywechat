@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\GroupRobot\Messages;
+namespace Fromthink\EasyWeChat\Work\GroupRobot\Messages;
 
 /**
  * Class News.

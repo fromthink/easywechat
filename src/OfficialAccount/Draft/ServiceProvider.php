@@ -11,7 +11,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OfficialAccount\Draft;
+namespace Fromthink\EasyWeChat\OfficialAccount\Draft;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

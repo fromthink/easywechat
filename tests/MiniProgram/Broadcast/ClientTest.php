@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\MiniProgram\Broadcast;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\Broadcast;
 
-use EasyWeChat\MiniProgram\Broadcast\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\MiniProgram\Broadcast\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
@@ -112,7 +112,7 @@ class ClientTest extends TestCase
      */
     public function testGetRooms()
     {
-        $client = $this->mockApiClient(\EasyWeChat\MiniProgram\Live\Client::class)->makePartial();
+        $client = $this->mockApiClient(\Fromthink\EasyWeChat\MiniProgram\Live\Client::class)->makePartial();
 
         $params = [
             'start' => 0,

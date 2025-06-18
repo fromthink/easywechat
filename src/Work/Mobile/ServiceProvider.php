@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Mobile;
+namespace Fromthink\EasyWeChat\Work\Mobile;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use EasyWeChat\Work\Mobile\Auth\Client;
+use Fromthink\EasyWeChat\Work\Mobile\Auth\Client;
 
 /**
  * ServiceProvider.

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Traits;
+namespace Fromthink\EasyWeChat\Kernel\Traits;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Support\Arr;
-use EasyWeChat\Kernel\Support\Str;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Support\Arr;
+use Fromthink\EasyWeChat\Kernel\Support\Str;
 
 /**
  * Trait Attributes.
@@ -172,7 +172,7 @@ trait HasAttributes
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     public function all()
     {
@@ -238,7 +238,7 @@ trait HasAttributes
     /**
      * Check required attributes.
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      */
     protected function checkRequiredAttributes()
     {

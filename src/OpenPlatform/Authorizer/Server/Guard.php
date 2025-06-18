@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\Server;
+namespace Fromthink\EasyWeChat\OpenPlatform\Authorizer\Server;
 
-use EasyWeChat\Kernel\ServerGuard;
+use Fromthink\EasyWeChat\Kernel\ServerGuard;
 
 /**
  * Class Guard.

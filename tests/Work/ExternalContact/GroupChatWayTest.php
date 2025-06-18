@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\ExternalContact;
+namespace Fromthink\EasyWeChat\Tests\Work\ExternalContact;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\ExternalContact\GroupChatWayClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\ExternalContact\GroupChatWayClient;
 
 class GroupChatWayTest extends TestCase
 {

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Payment\Transfer;
+namespace Fromthink\EasyWeChat\Tests\Payment\Transfer;
 
-use EasyWeChat\Payment\Application;
-use EasyWeChat\Payment\Transfer\Client;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Payment\Application;
+use Fromthink\EasyWeChat\Payment\Transfer\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
@@ -22,7 +22,7 @@ class ClientTest extends TestCase
      *
      * @param array $config
      *
-     * @return \EasyWeChat\Payment\Application
+     * @return \Fromthink\EasyWeChat\Payment\Application
      */
     private function makeApp($config = [])
     {

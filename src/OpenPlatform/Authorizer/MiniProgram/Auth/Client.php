@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth;
+namespace Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Auth;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenPlatform\Application;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\OpenPlatform\Application;
 
 /**
  * Class Client.
@@ -23,15 +23,15 @@ use EasyWeChat\OpenPlatform\Application;
 class Client extends BaseClient
 {
     /**
-     * @var \EasyWeChat\OpenPlatform\Application
+     * @var \Fromthink\EasyWeChat\OpenPlatform\Application
      */
     protected $component;
 
     /**
      * Client constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer  $app
-     * @param \EasyWeChat\OpenPlatform\Application $component
+     * @param \Fromthink\EasyWeChat\Kernel\ServiceContainer  $app
+     * @param \Fromthink\EasyWeChat\OpenPlatform\Application $component
      */
     public function __construct(ServiceContainer $app, Application $component)
     {
@@ -45,9 +45,9 @@ class Client extends BaseClient
      *
      * @param string $code
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      */
     public function session(string $code)
     {

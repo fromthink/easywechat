@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\Work\Message;
+namespace Fromthink\EasyWeChat\Tests\Work\Message;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\Kernel\Messages\Raw;
-use EasyWeChat\Kernel\Messages\Text;
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\Work\Message\Client;
-use EasyWeChat\Work\Message\Messenger;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\Kernel\Messages\Raw;
+use Fromthink\EasyWeChat\Kernel\Messages\Text;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Work\Message\Client;
+use Fromthink\EasyWeChat\Work\Message\Messenger;
 
 class MessengerTest extends TestCase
 {

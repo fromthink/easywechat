@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Wedrive;
+namespace Fromthink\EasyWeChat\Work\Wedrive;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Support\Arr;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\Support\Arr;
 
 /**
  * Class SpaceClient
@@ -29,9 +29,9 @@ class SpaceClient extends BaseClient
      * @param array $authInfo       空间成员权限信息
      * @param integer $spaceSubType 空间类型, 0:普通 1:相册
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E6%96%B0%E5%BB%BA%E7%A9%BA%E9%97%B4
@@ -55,9 +55,9 @@ class SpaceClient extends BaseClient
      * @param string $spaceid
      * @param string $spaceName 重命名后的空间名
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E9%87%8D%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4
@@ -79,9 +79,9 @@ class SpaceClient extends BaseClient
      * @param string $userid
      * @param string $spaceid
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E8%A7%A3%E6%95%A3%E7%A9%BA%E9%97%B4
@@ -97,9 +97,9 @@ class SpaceClient extends BaseClient
      * @param string $userid
      * @param string $spaceid
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E8%8E%B7%E5%8F%96%E7%A9%BA%E9%97%B4%E7%9B%B8%E5%86%8C%E4%BF%A1%E6%81%AF
@@ -115,9 +115,9 @@ class SpaceClient extends BaseClient
      * @param string $userid
      * @param string $spaceid
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E8%8E%B7%E5%8F%96%E9%82%80%E8%AF%B7%E9%93%BE%E6%8E%A5
@@ -134,9 +134,9 @@ class SpaceClient extends BaseClient
      * @param string $spaceid
      * @param array  $settings 设置
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE
@@ -155,9 +155,9 @@ class SpaceClient extends BaseClient
      * @param string $spaceid
      * @param array $authInfo  被添加的空间成员信息
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E6%B7%BB%E5%8A%A0%E6%88%90%E5%91%98%E9%83%A8%E9%97%A8
@@ -180,9 +180,9 @@ class SpaceClient extends BaseClient
      * @param string $spaceid
      * @param array $authInfo  被移除的空间成员信息
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @see https://developer.work.weixin.qq.com/document/path/93656#%E6%B7%BB%E5%8A%A0%E6%88%90%E5%91%98%E9%83%A8%E9%97%A8

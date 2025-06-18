@@ -1,15 +1,15 @@
 <?php
 
-namespace EasyWeChat\Tests\MiniProgram\Shop\Aftersale;
+namespace Fromthink\EasyWeChat\Tests\MiniProgram\Shop\Aftersale;
 
-use EasyWeChat\Tests\TestCase;
-use EasyWeChat\MiniProgram\Shop\Aftersale\Client;
+use Fromthink\EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\MiniProgram\Shop\Aftersale\Client;
 
 /**
  * 自定义版交易组件开放接口
  *    售后接口
  *
- * @package EasyWeChat\Tests\MiniProgram\Shop\Basic
+ * @package Fromthink\EasyWeChat\Tests\MiniProgram\Shop\Basic
  * @author HaoLiang <haoliang@qiyuankeji.cn>
  */
 class ClientTest extends TestCase

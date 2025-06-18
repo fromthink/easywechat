@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel;
+namespace Fromthink\EasyWeChat\Kernel;
 
-use EasyWeChat\Kernel\Contracts\AccessTokenInterface;
-use EasyWeChat\Kernel\Http\Response;
-use EasyWeChat\Kernel\Traits\HasHttpRequests;
+use Fromthink\EasyWeChat\Kernel\Contracts\AccessTokenInterface;
+use Fromthink\EasyWeChat\Kernel\Http\Response;
+use Fromthink\EasyWeChat\Kernel\Traits\HasHttpRequests;
 use GuzzleHttp\MessageFormatter;
 use GuzzleHttp\Middleware;
 use Psr\Http\Message\RequestInterface;
@@ -32,11 +32,11 @@ class BaseClient
     }
 
     /**
-     * @var \EasyWeChat\Kernel\ServiceContainer
+     * @var \Fromthink\EasyWeChat\Kernel\ServiceContainer
      */
     protected $app;
     /**
-     * @var \EasyWeChat\Kernel\Contracts\AccessTokenInterface|null
+     * @var \Fromthink\EasyWeChat\Kernel\Contracts\AccessTokenInterface|null
      */
     protected $accessToken = null;
     /**
@@ -47,8 +47,8 @@ class BaseClient
     /**
      * BaseClient constructor.
      *
-     * @param \EasyWeChat\Kernel\ServiceContainer                    $app
-     * @param \EasyWeChat\Kernel\Contracts\AccessTokenInterface|null $accessToken
+     * @param \Fromthink\EasyWeChat\Kernel\ServiceContainer                    $app
+     * @param \Fromthink\EasyWeChat\Kernel\Contracts\AccessTokenInterface|null $accessToken
      */
     public function __construct(ServiceContainer $app, AccessTokenInterface $accessToken = null)
     {
@@ -62,9 +62,9 @@ class BaseClient
      * @param string $url
      * @param array  $query
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function httpGet(string $url, array $query = [])
@@ -78,9 +78,9 @@ class BaseClient
      * @param string $url
      * @param array  $data
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function httpPost(string $url, array $data = [])
@@ -95,9 +95,9 @@ class BaseClient
      * @param array  $data
      * @param array  $query
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function httpPostJson(string $url, array $data = [], array $query = [])
@@ -113,9 +113,9 @@ class BaseClient
      * @param array  $form
      * @param array  $query
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function httpUpload(string $url, array $files = [], array $form = [], array $query = [])
@@ -157,7 +157,7 @@ class BaseClient
     }
 
     /**
-     * @param \EasyWeChat\Kernel\Contracts\AccessTokenInterface $accessToken
+     * @param \Fromthink\EasyWeChat\Kernel\Contracts\AccessTokenInterface $accessToken
      *
      * @return $this
      */
@@ -174,9 +174,9 @@ class BaseClient
      * @param array  $options
      * @param bool   $returnRaw
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function request(string $url, string $method = 'GET', array $options = [], $returnRaw = false)
@@ -197,9 +197,9 @@ class BaseClient
      * @param string $method
      * @param array  $options
      *
-     * @return \EasyWeChat\Kernel\Http\Response
+     * @return \Fromthink\EasyWeChat\Kernel\Http\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function requestRaw(string $url, string $method = 'GET', array $options = [])

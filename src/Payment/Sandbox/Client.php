@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Payment\Sandbox;
+namespace Fromthink\EasyWeChat\Payment\Sandbox;
 
-use EasyWeChat\Kernel\Traits\InteractsWithCache;
-use EasyWeChat\Payment\Kernel\BaseClient;
-use EasyWeChat\Payment\Kernel\Exceptions\SandboxException;
+use Fromthink\EasyWeChat\Kernel\Traits\InteractsWithCache;
+use Fromthink\EasyWeChat\Payment\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Payment\Kernel\Exceptions\SandboxException;
 
 /**
  * Class Client.
@@ -27,10 +27,10 @@ class Client extends BaseClient
     /**
      * @return string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-     * @throws \EasyWeChat\Payment\Kernel\Exceptions\SandboxException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Payment\Kernel\Exceptions\SandboxException
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getKey(): string

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\BasicService\QrCode;
+namespace Fromthink\EasyWeChat\BasicService\QrCode;
 
-use EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
@@ -33,7 +33,7 @@ class Client extends BaseClient
      *
      * @param string|int $sceneValue
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      */
     public function forever($sceneValue)
     {
@@ -55,7 +55,7 @@ class Client extends BaseClient
      * @param string|int $sceneValue
      * @param int|null   $expireSeconds
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      */
     public function temporary($sceneValue, $expireSeconds = null)
     {
@@ -92,9 +92,9 @@ class Client extends BaseClient
      * @param bool   $temporary
      * @param int    $expireSeconds
      *
-     * @return \Psr\Http\Message\ResponseInterface|\EasyWeChat\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Fromthink\EasyWeChat\Kernel\Support\Collection|array|object|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function create($actionName, $actionInfo, $temporary = true, $expireSeconds = null)

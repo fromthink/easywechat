@@ -8,10 +8,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork\License;
+namespace Fromthink\EasyWeChat\OpenWork\License;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Order Client
@@ -33,9 +33,9 @@ class Client extends BaseClient
      * @param string $corpId 企业id，只支持加密的corpid
      * @param array $data
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection
@@ -55,9 +55,9 @@ class Client extends BaseClient
      * @param string $corpId 企业id，只支持加密的corpid
      * @param array $data
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection
@@ -78,9 +78,9 @@ class Client extends BaseClient
      * @param string $buyerUserId           下单人。服务商企业内成员userid。该userid必须登录过企业微信，并且企业微信已绑定微信
      * @param int    $accountDurationMonths 购买的月数，每个月按照31天计算。最多购买36个月。(若企业为服务商测试企业，每次续期只能续期1个月)
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection
@@ -107,9 +107,9 @@ class Client extends BaseClient
      * @param string|null $cursor     用于分页查询的游标，字符串类型，由上一次调用返回，首次调用可不填
      * @param int         $limit      返回的最大记录数，整型，最大值1000，默认值500
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection
@@ -133,9 +133,9 @@ class Client extends BaseClient
      *
      * @param string $orderId 订单id
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection
@@ -158,8 +158,8 @@ class Client extends BaseClient
      * @param string      $orderId 订单号
      * @param string|null $cursor  用于分页查询的游标，字符串类型，由上一次调用返回，首次调用可不填
      * @param int         $limit   返回的最大记录数，整型，最大值1000，默认值500
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection
@@ -181,9 +181,9 @@ class Client extends BaseClient
      * @param string $corpId 企业id，只支持加密的corpid
      * @param string $orderId 订单号
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection SpellCheckingInspection
      * @noinspection PhpFullyQualifiedNameUsageInspection

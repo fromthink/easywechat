@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Menu;
+namespace Fromthink\EasyWeChat\Work\Menu;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

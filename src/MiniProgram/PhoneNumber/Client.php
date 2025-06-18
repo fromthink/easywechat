@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\PhoneNumber;
+namespace Fromthink\EasyWeChat\MiniProgram\PhoneNumber;
 
-use EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
  *
- * @package EasyWeChat\MiniProgram\PhoneNumber
+ * @package Fromthink\EasyWeChat\MiniProgram\PhoneNumber
  *
  * @author 读心印 <aa24615@qq.com>
  */
@@ -29,9 +29,9 @@ class Client extends BaseClient
      *
      * @param string $code
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      * @author 读心印 <aa24615@qq.com>

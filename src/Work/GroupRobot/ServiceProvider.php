@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\GroupRobot;
+namespace Fromthink\EasyWeChat\Work\GroupRobot;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

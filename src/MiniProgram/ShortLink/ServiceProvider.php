@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\ShortLink;
+namespace Fromthink\EasyWeChat\MiniProgram\ShortLink;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

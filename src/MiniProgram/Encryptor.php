@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram;
+namespace Fromthink\EasyWeChat\MiniProgram;
 
-use EasyWeChat\Kernel\Encryptor as BaseEncryptor;
-use EasyWeChat\Kernel\Exceptions\DecryptException;
-use EasyWeChat\Kernel\Support\AES;
+use Fromthink\EasyWeChat\Kernel\Encryptor as BaseEncryptor;
+use Fromthink\EasyWeChat\Kernel\Exceptions\DecryptException;
+use Fromthink\EasyWeChat\Kernel\Support\AES;
 
 /**
  * Class Encryptor.
@@ -31,7 +31,7 @@ class Encryptor extends BaseEncryptor
      *
      * @return array
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\DecryptException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\DecryptException
      */
     public function decryptData(string $sessionKey, string $iv, string $encrypted): array
     {

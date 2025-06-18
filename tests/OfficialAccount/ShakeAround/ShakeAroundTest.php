@@ -9,18 +9,18 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Tests\OfficialAccount\ShakeAround;
+namespace Fromthink\EasyWeChat\Tests\OfficialAccount\ShakeAround;
 
-use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
-use EasyWeChat\OfficialAccount\Application;
-use EasyWeChat\OfficialAccount\ShakeAround\Client;
-use EasyWeChat\OfficialAccount\ShakeAround\DeviceClient;
-use EasyWeChat\OfficialAccount\ShakeAround\GroupClient;
-use EasyWeChat\OfficialAccount\ShakeAround\MaterialClient;
-use EasyWeChat\OfficialAccount\ShakeAround\RelationClient;
-use EasyWeChat\OfficialAccount\ShakeAround\ShakeAround;
-use EasyWeChat\OfficialAccount\ShakeAround\StatsClient;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
+use Fromthink\EasyWeChat\OfficialAccount\Application;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\Client;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\DeviceClient;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\GroupClient;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\MaterialClient;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\RelationClient;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\ShakeAround;
+use Fromthink\EasyWeChat\OfficialAccount\ShakeAround\StatsClient;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class ShakeAroundTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace EasyWeChat\OpenWork\Contact;
+namespace Fromthink\EasyWeChat\OpenWork\Contact;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
 
 /**
  * Contact Client
@@ -23,7 +23,7 @@ class Client extends BaseClient
      *
      * @param string      $authCorpId       授权企业corp_id
      * @param array       $mediaIdList      需要转译的文件的media_id列表，只支持后缀名为xls/xlsx，doc/docx，csv，txt的文件。
-     * 不超过20个文件，获取方式使用{@see \EasyWeChat\OpenWork\Media\Client::uploadFile() 上传需要转译的文件}
+     * 不超过20个文件，获取方式使用{@see \Fromthink\EasyWeChat\OpenWork\Media\Client::uploadFile() 上传需要转译的文件}
      *
      * @param string|null $outputFileName   转译完打包的文件名，不需带后缀。企业微信后台会打包成zip压缩文件，并自动拼接上.zip后缀。
      * 若media_id_list中文件个数大于1，则该字段必填。若media_id_list中文件个数等于1，且未填该字段，则转译完不打包成压缩文件。支持id转译
@@ -31,9 +31,9 @@ class Client extends BaseClient
      * @param string|null $outputFileFormat 若不指定，则输出格式跟输入格式相同。若要转换输出格式，当前仅支持输出文件为pdf格式。
      * 若$mediaIdList中文件存在相同前缀名的文件，则输出文件命名规则为：文件前缀名_ 文件格式后缀.pdf，例如：20200901_ xlsx.pdf
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -53,9 +53,9 @@ class Client extends BaseClient
      *
      * @param string $jobId 异步任务id，最大长度为64字节
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
@@ -74,9 +74,9 @@ class Client extends BaseClient
      * @param array  $userIdList 要排序的user_id列表，最多支持1000个
      * @param int    $sortType   排序方式 0：根据姓名拼音升序排列，返回用户userid列表 1：根据姓名拼音降序排列，返回用户userid列表
      *
-     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     * @return array|\Fromthink\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\Shipping;
+namespace Fromthink\EasyWeChat\MiniProgram\Shipping;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MicroMerchant\Withdraw;
+namespace Fromthink\EasyWeChat\MicroMerchant\Withdraw;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

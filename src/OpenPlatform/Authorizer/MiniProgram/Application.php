@@ -9,22 +9,22 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Authorizer\MiniProgram;
+namespace Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram;
 
-use EasyWeChat\MiniProgram\Application as MiniProgram;
-use EasyWeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
+use Fromthink\EasyWeChat\MiniProgram\Application as MiniProgram;
+use Fromthink\EasyWeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client  $account
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Code\Client     $code
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Domain\Client   $domain
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Setting\Client  $setting
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Tester\Client   $tester
- * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Material\Client $material
+ * @property \Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Account\Client  $account
+ * @property \Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Code\Client     $code
+ * @property \Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Domain\Client   $domain
+ * @property \Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Setting\Client  $setting
+ * @property \Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Tester\Client   $tester
+ * @property \Fromthink\EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Material\Client $material
  */
 class Application extends MiniProgram
 {

@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Test\Kernel\Messages;
+namespace Fromthink\EasyWeChat\Test\Kernel\Messages;
 
-use EasyWeChat\Kernel\Messages\Card;
-use EasyWeChat\Tests\TestCase;
+use Fromthink\EasyWeChat\Kernel\Messages\Card;
+use Fromthink\EasyWeChat\Tests\TestCase;
 
 class CardTest extends TestCase
 {

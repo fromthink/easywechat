@@ -1,10 +1,10 @@
 <?php
 
-namespace EasyWeChat\MiniProgram\RiskControl;
+namespace Fromthink\EasyWeChat\MiniProgram\RiskControl;
 
-use EasyWeChat\Kernel\BaseClient;
-use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use EasyWeChat\Kernel\Support\Collection;
+use Fromthink\EasyWeChat\Kernel\BaseClient;
+use Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException;
+use Fromthink\EasyWeChat\Kernel\Support\Collection;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
 
@@ -12,7 +12,7 @@ use Psr\Http\Message\ResponseInterface;
  * 安全风控
  *
  * Class Client
- * @package EasyWeChat\MiniProgram\RiskControl
+ * @package Fromthink\EasyWeChat\MiniProgram\RiskControl
  */
 class Client extends BaseClient
 {

@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server;
+namespace Fromthink\EasyWeChat\OpenPlatform\Server;
 
-use EasyWeChat\Kernel\ServerGuard;
-use EasyWeChat\OpenPlatform\Server\Handlers\Authorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\Unauthorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\UpdateAuthorized;
-use EasyWeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
+use Fromthink\EasyWeChat\Kernel\ServerGuard;
+use Fromthink\EasyWeChat\OpenPlatform\Server\Handlers\Authorized;
+use Fromthink\EasyWeChat\OpenPlatform\Server\Handlers\Unauthorized;
+use Fromthink\EasyWeChat\OpenPlatform\Server\Handlers\UpdateAuthorized;
+use Fromthink\EasyWeChat\OpenPlatform\Server\Handlers\VerifyTicketRefreshed;
 use Symfony\Component\HttpFoundation\Response;
-use function EasyWeChat\Kernel\data_get;
+use function Fromthink\EasyWeChat\Kernel\data_get;
 
 /**
  * Class Guard.
@@ -35,9 +35,9 @@ class Guard extends ServerGuard
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      *
-     * @throws \EasyWeChat\Kernel\Exceptions\BadRequestException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidArgumentException
-     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\BadRequestException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Fromthink\EasyWeChat\Kernel\Exceptions\InvalidConfigException
      */
     protected function resolve(): Response
     {

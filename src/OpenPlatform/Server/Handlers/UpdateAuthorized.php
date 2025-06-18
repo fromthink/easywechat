@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenPlatform\Server\Handlers;
+namespace Fromthink\EasyWeChat\OpenPlatform\Server\Handlers;
 
-use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
+use Fromthink\EasyWeChat\Kernel\Contracts\EventHandlerInterface;
 
 /**
  * Class UpdateAuthorized.

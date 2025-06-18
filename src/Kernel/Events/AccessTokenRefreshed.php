@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Kernel\Events;
+namespace Fromthink\EasyWeChat\Kernel\Events;
 
-use EasyWeChat\Kernel\AccessToken;
+use Fromthink\EasyWeChat\Kernel\AccessToken;
 
 /**
  * Class AccessTokenRefreshed.
@@ -21,12 +21,12 @@ use EasyWeChat\Kernel\AccessToken;
 class AccessTokenRefreshed
 {
     /**
-     * @var \EasyWeChat\Kernel\AccessToken
+     * @var \Fromthink\EasyWeChat\Kernel\AccessToken
      */
     public $accessToken;
 
     /**
-     * @param \EasyWeChat\Kernel\AccessToken $accessToken
+     * @param \Fromthink\EasyWeChat\Kernel\AccessToken $accessToken
      */
     public function __construct(AccessToken $accessToken)
     {

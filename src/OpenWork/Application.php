@@ -9,28 +9,28 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\OpenWork;
+namespace Fromthink\EasyWeChat\OpenWork;
 
-use EasyWeChat\Kernel\ServiceContainer;
-use EasyWeChat\OpenWork\Work\Application as Work;
+use Fromthink\EasyWeChat\Kernel\ServiceContainer;
+use Fromthink\EasyWeChat\OpenWork\Work\Application as Work;
 
 /**
  * Application.
  *
  * @author xiaomin <keacefull@gmail.com>
  *
- * @property \EasyWeChat\OpenWork\Server\Guard            $server
- * @property \EasyWeChat\OpenWork\Corp\Client             $corp
- * @property \EasyWeChat\OpenWork\Provider\Client         $provider
- * @property \EasyWeChat\OpenWork\SuiteAuth\AccessToken   $suite_access_token
- * @property \EasyWeChat\OpenWork\Auth\AccessToken        $provider_access_token
- * @property \EasyWeChat\OpenWork\SuiteAuth\SuiteTicket   $suite_ticket
- * @property \EasyWeChat\OpenWork\MiniProgram\Client      $mini_program
- * @property \EasyWeChat\OpenWork\Media\Client            $media
- * @property \EasyWeChat\OpenWork\Contact\Client          $contact
- * @property \EasyWeChat\OpenWork\License\Client          $license_order
- * @property \EasyWeChat\OpenWork\License\Account         $license_account
- * @property \EasyWeChat\OpenWork\Device\Client           $device
+ * @property \Fromthink\EasyWeChat\OpenWork\Server\Guard            $server
+ * @property \Fromthink\EasyWeChat\OpenWork\Corp\Client             $corp
+ * @property \Fromthink\EasyWeChat\OpenWork\Provider\Client         $provider
+ * @property \Fromthink\EasyWeChat\OpenWork\SuiteAuth\AccessToken   $suite_access_token
+ * @property \Fromthink\EasyWeChat\OpenWork\Auth\AccessToken        $provider_access_token
+ * @property \Fromthink\EasyWeChat\OpenWork\SuiteAuth\SuiteTicket   $suite_ticket
+ * @property \Fromthink\EasyWeChat\OpenWork\MiniProgram\Client      $mini_program
+ * @property \Fromthink\EasyWeChat\OpenWork\Media\Client            $media
+ * @property \Fromthink\EasyWeChat\OpenWork\Contact\Client          $contact
+ * @property \Fromthink\EasyWeChat\OpenWork\License\Client          $license_order
+ * @property \Fromthink\EasyWeChat\OpenWork\License\Account         $license_account
+ * @property \Fromthink\EasyWeChat\OpenWork\Device\Client           $device
  * @noinspection PhpFullyQualifiedNameUsageInspection
  */
 class Application extends ServiceContainer
@@ -64,11 +64,11 @@ class Application extends ServiceContainer
     /**
      * Creates the miniProgram application.
      *
-     * @return \EasyWeChat\Work\MiniProgram\Application
+     * @return \Fromthink\EasyWeChat\Work\MiniProgram\Application
      */
-    public function miniProgram(): \EasyWeChat\Work\MiniProgram\Application
+    public function miniProgram(): \Fromthink\EasyWeChat\Work\MiniProgram\Application
     {
-        return new \EasyWeChat\Work\MiniProgram\Application($this->getConfig());
+        return new \Fromthink\EasyWeChat\Work\MiniProgram\Application($this->getConfig());
     }
 
     /**

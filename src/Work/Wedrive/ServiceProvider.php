@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\Work\Wedrive;
+namespace Fromthink\EasyWeChat\Work\Wedrive;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

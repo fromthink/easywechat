@@ -9,27 +9,27 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyWeChat\MiniProgram\Mall;
+namespace Fromthink\EasyWeChat\MiniProgram\Mall;
 
 /**
  * Class Application.
  *
  * @author mingyoung <mingyoungcheung@gmail.com>
  *
- * @property \EasyWeChat\MiniProgram\Mall\OrderClient   $order
- * @property \EasyWeChat\MiniProgram\Mall\CartClient    $cart
- * @property \EasyWeChat\MiniProgram\Mall\ProductClient $product
- * @property \EasyWeChat\MiniProgram\Mall\MediaClient   $media
+ * @property \Fromthink\EasyWeChat\MiniProgram\Mall\OrderClient   $order
+ * @property \Fromthink\EasyWeChat\MiniProgram\Mall\CartClient    $cart
+ * @property \Fromthink\EasyWeChat\MiniProgram\Mall\ProductClient $product
+ * @property \Fromthink\EasyWeChat\MiniProgram\Mall\MediaClient   $media
  */
 class ForwardsMall
 {
     /**
-     * @var \EasyWeChat\Kernel\ServiceContainer
+     * @var \Fromthink\EasyWeChat\Kernel\ServiceContainer
      */
     protected $app;
 
     /**
-     * @param \EasyWeChat\Kernel\ServiceContainer $app
+     * @param \Fromthink\EasyWeChat\Kernel\ServiceContainer $app
      */
     public function __construct($app)
     {
